@@ -1,0 +1,270 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+  margin: 0;
+  padding: 0;
+  }
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+ nav{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 0 30px;
+ }
+ nav ul{
+     display: flex;
+ }
+ 
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  .firstDiv{
+    background-image: url("media/firstBackground.png");
+    background-size: cover;
+  }
+  nav ul li, nav ul i{
+    list-style-type: none;
+    margin: 0 20px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  nav ul li a:hover{
+    color:#fd7e14;
+  }
+  header img{
+    height: 60px;
+    margin-left: 7%;
+    margin-top: 1%;
+  }
+  header + section{
+    margin-left: 7%;
+    width: 40%;
+    padding-bottom: 5%;
+  }
+  header + section h1 {
+    font-size: 5rem;
+    margin: 6.2rem 0 1rem 0
+  }
+  header + section input {
+    margin: 0 0 1rem 0;
+    width: 25rem;
+    padding: 1rem;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0px 10px 43px 19px rgba(0, 0, 0, 0.1);
+  }
+  
+  header + section select {
+    padding: 1rem;
+    background-color: #fd7e14;
+    color: white;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  header + section select option {
+    background-color: white;
+    color: black;
+  }
+  .searchBar{
+    display: flex;
+    align-items: baseline;
+
+  }
+  header + section ul{
+      display: flex;
+      padding: 0;
+      margin: 0;
+  }
+  header + section ul li{
+      list-style-type: none;
+      margin-right: 8%;
+      font-weight: bold;
+  }
+  header + section ul li a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .sectionIcons{
+    color:#fd7e14;
+  }
+  .secondDiv{
+    height: 30rem;
+    background-image: url("media/blur_edges.jpg"), url("media/bggimg.jpg");
+    background-position: left, right;
+    background-repeat: no-repeat, no-repeat; 
+  }
+  .secondbg{
+      width: 50%;
+      margin: 5% 0 10% 27%;
+  }
+  .secondbg h3{
+      font-size: 3rem;
+      margin: 0;
+  }
+  .secondbg h2{
+      color: #fd7e14;
+      margin: 0;
+  }
+  .secondbg p {
+      font-size: 1.1rem;
+      text-align: justify;
+      line-height: 1.6rem;
+      width: 35rem;
+  }
+  .secondbg p + p{
+    margin-bottom: 6%;
+  }
+  .secondbg a{
+      background: #fd7e14;
+      color: white;
+      padding: 2%;
+      border-radius: 5px;
+      text-decoration: none;
+  }
+  .secondbg a:hover{
+    background: #f7a25c;
+  }
+  .thirdDiv{
+    background-color: #F1F5F6;
+    height: 53rem;
+  }
+  .thirdDiv > section {
+      text-align: center;
+      margin: 0 0 6% 0;
+      padding-top: 5%;
+  }
+  .thirdDiv section ul{
+      display: flex;
+      justify-content: space-between;
+      width: 30%;
+      margin: auto;
+      border-bottom: 1px solid rgb(235, 232, 232);
+      margin-bottom: 2.5%;
+  }
+  .thirdDiv section ul li{
+      list-style-type: none;
+  }
+  .thirdDiv ul li a{
+      text-decoration: none;
+      color: black;
+  }
+  .thirdDiv ul li a:hover{
+    text-decoration: underline;
+    color: #fd7e14;
+}
+  .thirdDiv section h3{
+      font-size: 3rem;
+      margin: 0 0 1.2rem 0;
+  }
+  .thirdDiv section h2{
+      color:#fd7e14;
+      margin: 0;
+  }
+  .thirdDiv section > section{
+      display: flex;
+      justify-content: center;
+  }
+  .thirdDiv img{
+    height: 15rem;
+    width: 15rem;
+    margin: 1rem;
+  }
+  .fourthDiv section{
+    text-align: center;
+    padding-top: 3%;
+  }
+  .fourthDiv h2{
+    color:#fd7e14;
+    margin: 0;
+  }
+  .fourthDiv h3{
+    font-size: 3rem;
+    margin: 0 0 1.2rem 0;
+  }
+  .openingHours{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 40%;
+    margin-bottom: 3%;
+}
+.fourthDiv + section{
+    text-align: center;
+    padding-top: 3%;
+}
+.fourthDiv + section h3{
+    font-size: 3rem;
+    margin: 0 0 1.2rem 0;
+}
+.fourthDiv + section h2{
+    color:#fd7e14;
+    margin-bottom: 0;
+}
+.fourthDiv + section p{
+    width: 50%;
+    margin: 2rem auto;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-style: italic;
+}
+
+.icon{
+    color:#fd7e14;
+}
+.spans{
+    padding-bottom: 0.7rem;
+}
+video{
+    height: 20rem;
+    width: 50rem;
+}
+.customer{
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin: auto;
+   margin-bottom: 2%;
+}
+.customer img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.name{
+    font-size: 1.5rem;
+}
+.title{
+    font-size: 0.8rem;
+    color: grey
+}
